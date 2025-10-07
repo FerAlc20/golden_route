@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Route - Juego 3D</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
+    <meta name="theme-color" content="#0a0f28" />
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <div id="info-panel">
+        <div class="hud-item">
+            <span class="hud-label">⭐ Puntaje:</span>
+            <span id="score" class="hud-value">0</span>
+        </div>
+        <div class="hud-item tokens">
+            <img src="./img/gema.png" alt="Gema" class="hud-icon">
+            <span id="gem-count" class="hud-value">0</span>
+            <img src="./img/libro.png" alt="Libro" class="hud-icon">
+            <span id="book-count" class="hud-value">0</span>
+            <img src="./img/pocion.png" alt="Poción" class="hud-icon">
+            <span id="potion-count" class="hud-value">0</span>
+        </div>
+    </div>
+
+    <div id="timer-panel">
+        <div class="hud-item">
+            <span class="hud-label">Nivel:</span>
+            <span id="level" class="hud-value">1</span>
+        </div>
+        <div class="hud-item">
+            <span class="hud-label">Tiempo:</span>
+            <span id="timer" class="hud-value">01:00</span>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div id="menu-card" class="menu-card">
+            <h1>Golden Route </h1>
+            <p>Recolecta los tesoros escondidos antes de que el tiempo se agote. ¡Buena suerte, aventurero!</p>
+
+            <div class="instructions">
+                <b>⚔️ Instrucciones del Juego:</b><br>
+                - Moverse: W, A, S, D o ↑ ↓ → ←<br>
+                - Mover caja: E <br>
+                - Saltar: Espacio<br> 
+                - Pausa: P<br>
+                - Recolectar: Acércate al objeto<br>
+                - Mover vista: Mouse<br><br>
+                <b>🎯 Meta:</b> Avanza de nivel cada 500 puntos y gana con 2500 puntos totales.
+            </div>
+
+            <button id="startButton" class="btn">Comenzar Aventura</button>
+        </div>
+    </div>
+
+    <div id="pause-menu" class="overlay-menu">
+        <div class="menu-card">
+            <h2>Juego Pausado</h2>
+            <button id="continueButton" class="btn">Continuar</button>
+            <button id="pauseRestartButton" class="btn">Reiniciar Aventura</button>
+        </div>
+    </div>
+
+    <div id="victory-message" class="overlay-menu">
+        <div class="menu-card">
+            <h2>¡Felicidades, viajero!</h2>
+            <p>Tu puntaje final es: <span id="final-score">0</span></p>
+            <button id="restartButton" class="btn">Reiniciar Aventura</button>
+        </div>
+    </div>
+
+    <div id="level-up-message"></div>
+
+    <footer id="footer"> © DSAV ITIC Desarrollado por Fernanda Alcántara </footer>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./build/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
