@@ -1,12 +1,6 @@
 /* ============================================================
-   The Lost Path — JS completo (versión larga)
-   Cambios:
-   - "🏆 Ver puntuaciones" SOLO en Pausa y Game Over (no en el menú inicial).
-   - Icono 🏆 flotante siempre visible a la derecha.
-   - Botón de sonido (mute/unmute).
-   - Animaciones: look/jog/walkL/walkR/push/jump/strong/take/macaco.
-   - Empuje con tecla E.
-   - HUD con alerta de 10s, tokens dentro del área, luces cálidas de columnas.
+   ITICS DSAV
+   Moedano Alcántara María Fernanda
    ============================================================ */
 
 import * as THREE from 'three';
